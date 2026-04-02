@@ -1,15 +1,5 @@
 {
-  "name": "OpenClaw Dev",
+  "name": "OpenClaw",
   "image": "mcr.microsoft.com/devcontainers/python:3.11",
-  "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
-  },
-  "postCreateCommand": "git clone https://github.com/openclaw/openclaw.git . && pip install -r requirements.txt",
-  "forwardPorts": [18789],
-  "portsAttributes": {
-    "18789": {
-      "label": "OpenClaw Gateway",
-      "onAutoForward": "notify"
-    }
-  }
+  "forwardPorts": [18789]
 }
