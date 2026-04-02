@@ -1,0 +1,14 @@
+{
+  "name": "OpenClaw Dev",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "forwardPorts": [18789],
+  "portsAttributes": {
+    "18789": {
+      "label": "OpenClaw Gateway",
+      "onAutoForward": "notify"
+    }
+  }
+}
