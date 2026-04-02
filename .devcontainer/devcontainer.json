@@ -1,5 +1,6 @@
 {
   "name": "OpenClaw",
   "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "postCreateCommand": "git clone https://github.com/openclaw/openclaw.git .",
   "forwardPorts": [18789]
 }
